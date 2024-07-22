@@ -1,15 +1,12 @@
 <template>
 <div class="flex justify-center items-center">
-  <div>
-    <ContentDoc path="/blog/hello"></ContentDoc>
-  </div>
+  <iframe src="https://bento.me/olafsergent" frameborder="0" width="100%" height="100vh"></iframe>
 </div>
 </template>
 
-<script setup lang="ts">
-useHead({
-  script: [
-    { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
-  ]
-})
-</script>
+<style lang="css">
+iframe {
+  width: 100vw;
+  height: 100vh;
+}
+</style>
